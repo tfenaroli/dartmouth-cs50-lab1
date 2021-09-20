@@ -1,7 +1,9 @@
 #!/bin/bash
 # A simple script
 
-if [ $# != 1 ] then echo "not" fi
+echo "|Area|Doses Administered|"
+echo "| :--------- | --------: |"
 
-echo "$1"
+grep 'All' $1 | cut -d "," -f2,10 | sort -t "," -k2 -nr | head -10 | sed s/","/"|"/ | sed s/^/"|"/ | sed s/$/"|"/
+
 exit 0
