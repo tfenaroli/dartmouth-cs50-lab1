@@ -1,5 +1,8 @@
 #!/bin/bash
-# a simple script
+# summarize.sh
+# Thomas Fenaroli
+# 09/21/2021
+# run the script with pathnames as arguments to receive (in stdout) a summary of the files in markdown format
 
 for var in "$@"
 do
