@@ -43,9 +43,3 @@ grep 'All' vaccine_data_us.csv | cut -d "," -f2,10 | sort -t "," -k2 -nr | head 
 ``` bash
 grep 'All' vaccine_data_us.csv | cut -d "," -f2,10 | sort -t "," -k2 -nr | head -10 | sed s/","/"|"/ | sed s/^/"|"/ | sed s/$/"|"/
 ```
-
-# Problem I
-
-``` bash
-
-```
